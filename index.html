@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Finder</title>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Utility CSS for basic adjustments like margin, padding  -->
+    <link rel="stylesheet" href="css/util.css">
+
+    <!-- Cosutom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Start Here -->
+    <nav class="shadow-b-10 navbar navbar-expand-sm navbar-light bg-light p-0">
+        <div class="container">
+            <a href="index.html" class="navbar-brand font-weight-bolder d-flex flex-column align-items-center">
+                <i class="fa fa-github fa-2x text-danger"></i>
+                GitHub Profile Finder
+            </a>
+        </div>
+    </nav>
+
+    <!-- Search Profile Section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 col-md-2"></div>
+                <div class="col-sm-8 col-md-8">
+                    <div class="form-group w-100 m-t-250">
+                        <input class="form-control form-control-lg font-weight-bolder text-dark text-center" type="text"
+                            id="searchInput" placeholder="GitHub Username" autocomplete="off">
+                        <div class="d-flex justify-content-center mt-3">
+                            <button id="searchBtn"
+                                class="btn btn-outline-primary btn-lg w-50 font-weight-bolder">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="searchResult">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="card w-50 my-3 d-none" id="github-card">
+                    <div class="card-header text-center font-weight-bolder">
+                        <span id="github-username">NULL</span>
+                    </div>
+                    <div class="card-img d-flex justify-content-center my-2">
+                        <img class="img-profile" src="" alt="GitHub Profile Image" id="github-profile">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text lead">
+                            <div class="github-username text-success font-weight-bolder"><i
+                                    class="fa fa-github fa-2x mr-2 text-danger"></i><a class="text-decoration-none"
+                                    href="" id="github-profile-link" target="_blank">NULL</a> @GitHub
+                            </div>
+                            <div class="mt-2">
+                                <span class="badge badge-primary"><a href="" class="text-decoration-none text-white"
+                                        id="github-followers" target="_blank">Followers</a>
+                                    <span id="github-followers-count">NULL</span></span>
+                                <span class="badge badge-danger"><a href="" class="text-decoration-none text-white"
+                                        id="github-following" target="_blank">Following</a> <span
+                                        id="github-following-count">NULL</span></span>
+
+                                <span class="badge badge-success"><a href="" target="_blank"
+                                        class="text-decoration-none text-white" id="github-gist">Gist</a>
+                                </span>
+
+                                <div class="text-left mt-3">
+                                    <p class="text-dark" id="github-bio">NULL</p>
+
+                                    <div>
+                                        <span><i class="fa fa-link mr-2"></i>Website</span>
+                                        <span><a class="text-decoration-none" id="github-portfolio" href=""
+                                                target="_blank">NULL</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-sm-6 text-center pb-0">
+                                <span class="lead">Public Repos <span class="badge badge-danger"
+                                        id="github-public-repos">NULL</span></span>
+                            </div>
+                            <div class="col-sm-6 text-center pb-0">
+                                <span class="lead">Public Gists <span class="badge badge-warning"
+                                        id="github-public-gists">NULL</span></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JQuery Required for Bootstrap JS -->
+    <script src="js/jquery/jquery.js"></script>
+
+    <!-- Popper JS required for Popovers and dismissible alerts -->
+    <script src="js/popper.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Navbar Stylings */
+.shadow-b-10 {
+    box-shadow: 0 0 20px #000;
+    z-index: 1;
+}
+
+.full-region {
+    width: 100%;
+    height: 100vh;
+    background: rgb(233, 233, 233);
+}
+
+
+/* GitHub Profile Image */
+.img-profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #000;
+}
